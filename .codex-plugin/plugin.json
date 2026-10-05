@@ -1,0 +1,26 @@
+{
+  "author": {
+    "name": "方睿科技 FUNRAISE"
+  },
+  "description": "FUNRAISE MCP connects ChatGPT to Taiwan's official real-estate and company records. Ask in plain language about transaction prices, office buildings, land parcels, urban renewal zones, building permits, industrial parks and company registration, and get answers grounded in government records rather than recollection. Coverage: 26 data sources and 79 read-only tools. Ministry of the Interior actual price registration for sales, rentals and pre-sales (2012 onwards); cadastral maps covering 19 of Taiwan's 22 counties and cities; nationwide urban renewal areas and development zones; Taipei building and use permits with scanned drawings; the Ministry of Economic Affairs company and business registries; and all 212 industrial parks. Every tool is read-only and answers state their own limits. When a county or district is not covered, the tool says so instead of returning an empty result.",
+  "interface": {
+    "capabilities": [],
+    "category": "Data & Analytics",
+    "defaultPrompt": [
+      "台北市信義區今年的辦公室成交行情如何？",
+      "內湖科技園區裡有哪些上市櫃公司？",
+      "大安區有哪些都市更新案？範圍多大？"
+    ],
+    "developerName": "方睿科技 FUNRAISE",
+    "displayName": "方睿科技 FUNRAISE TW REAL ESTATE",
+    "longDescription": "FUNRAISE MCP connects ChatGPT to Taiwan's official real-estate and company records. Ask in plain language about transaction prices, office buildings, land parcels, urban renewal zones, building permits, industrial parks and company registration, and get answers grounded in government records rather than recollection. Coverage: 26 data sources and 79 read-only tools. Ministry of the Interior actual price registration for sales, rentals and pre-sales (2012 onwards); cadastral maps covering 19 of Taiwan's 22 counties and cities; nationwide urban renewal areas and development zones; Taipei building and use permits with scanned drawings; the Ministry of Economic Affairs company and business registries; and all 212 industrial parks. Every tool is read-only and answers state their own limits. When a county or district is not covered, the tool says so instead of returning an empty result.",
+    "privacyPolicyURL": "https://mcp.funraise.tw/privacy/",
+    "shortDescription": "Taiwan real estate data",
+    "supportURL": "https://mcp.funraise.tw/support/",
+    "termsOfServiceURL": "https://mcp.funraise.tw/terms/",
+    "websiteURL": "https://www.funraise.com.tw"
+  },
+  "name": "app-6aa91d37ee3c8191b35c4a287385bb80",
+  "version": "1.1.0",
+  "skills": "./skills/"
+}

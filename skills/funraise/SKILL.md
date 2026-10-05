@@ -1,17 +1,17 @@
 ---
 name: funraise
-description: 用 Funraise 方睿的台灣不動產與企業資料回答問題 —— 實價登錄（買賣／租賃／預售）、商辦大樓、地籍與地號、使用分區、都市更新、產業園區、市地重劃、公司登記與統編、上市櫃取得處分資產、區域市場量價走勢。使用者輸入 /funraise，或問到台灣的房地產、土地、商辦、廠辦、企業登記資料時使用。Use for Taiwan real-estate, land and company-registry questions answered from the Funraise connector.
+description: 用 Funraise 方睿的台灣不動產與企業資料回答問題 —— 實價登錄（買賣／租賃／預售）、商辦大樓、地籍與地號、使用分區、都市更新、產業園區、市地重劃、公司登記與統編、上市櫃取得處分資產、區域市場量價走勢。使用者輸入 /funraise、指名要用 Funraise，或問到台灣的房地產、土地、商辦、廠辦、企業登記資料時使用。Use for Taiwan real-estate, land and company-registry questions answered from the Funraise connector.
 ---
 
 # 用 Funraise 資料回答
 
-使用者在 `/funraise` 後面寫的就是問題。沒有寫問題時，問他要查什麼（地點、標的、期間）。
+使用者在 `/funraise` 後面（或指名 Funraise 時）寫的就是問題。沒有寫問題時，問他要查什麼（地點、標的、期間）。
 
 ## 1. 先確認連接器在
 
 Funraise 的工具名稱都是 `{mcp_id}__{tool_name}` 的形狀，例如 `actual-price-sale__search_actual_sales`、`land-info__land_boundary`。在可用工具裡找這個形狀的工具。
 
-- **一支都找不到**：Funraise 連接器還沒連上。請使用者到本 plugin 的 **Connectors** 分頁按連線（或自行新增連接器 `https://connector.mcp.funraise.ai/c/default/mcp`），用 Google 或 Microsoft 帳號登入。**不要改用網路搜尋或自己的知識冒充 Funraise 的資料。**
+- **一支都找不到**：Funraise 連接器還沒連上。請使用者在 AI 客戶端裡連線 Funraise（Claude：本 plugin 的 **Connectors** 分頁；ChatGPT：在 plugin 設定中連線；或自行新增連接器 `https://connector.mcp.funraise.ai/c/default/mcp`），用 Google 或 Microsoft 帳號登入。**不要改用網路搜尋或自己的知識冒充 Funraise 的資料。**
 - **找得到，但缺某個資料源**：使用者的設定只開了部分資料源。說清楚缺的是哪一個（用下方參考檔裡的名稱），並請他到 https://app.mcp.funraise.ai/admin/ 開啟。
 - 工具清單以實際可用的為準，不要拼湊清單裡沒有的名字。
 
