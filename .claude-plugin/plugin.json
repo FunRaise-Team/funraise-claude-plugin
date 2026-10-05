@@ -18,5 +18,7 @@
     "company-registry"
   ],
   "icon": "./.claude-plugin/icon.png",
-  "privacyPolicyUrl": "https://mcp.funraise.tw/privacy/"
+  "privacyPolicyUrl": "https://mcp.funraise.tw/privacy/",
+  "documentationUrl": "https://mcp.funraise.tw/docs/",
+  "termsOfServiceUrl": "https://mcp.funraise.tw/terms/"
 }
