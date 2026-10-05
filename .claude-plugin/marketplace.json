@@ -1,0 +1,14 @@
+{
+  "name": "funraise",
+  "owner": { "name": "Funraise Engineering", "url": "https://mcp.funraise.tw" },
+  "metadata": {
+    "description": "Funraise's Claude plugin for Taiwan real-estate data."
+  },
+  "plugins": [
+    {
+      "name": "funraise",
+      "source": "./",
+      "description": "Answer Taiwan real-estate questions with Funraise data. Type /funraise followed by your question."
+    }
+  ]
+}
