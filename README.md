@@ -17,13 +17,19 @@ Ask Claude about Taiwan real estate and get answers from Funraise data. Type `/f
 ## Install and use
 
 1. Install the plugin from **Customize > Plugins** in Claude.
-2. Open the plugin's **Connectors** tab, connect Funraise, and sign in with Google or Microsoft. New accounts complete a short profile on first sign-in.
+2. **Connect the connector — installing the plugin does not do this for you.** The plugin ships the connector, but it starts as *Not added*: open the plugin's **Connectors** tab and press **Connect** on `funraise`. Sign in with Google or Microsoft. New accounts complete a short profile on first sign-in (currently in Traditional Chinese); you are returned to the authorization page automatically. A personal account includes a free trial of 300 tool executions per month.
 3. In a chat, type `/`, choose `funraise`, and write your question. For example:
    `/funraise What was the average unit price of office transactions in Xinyi District in 2025?`
 
+If Claude says it cannot find any Funraise tools, step 2 has not been completed in that conversation.
+
 Requirements: a Pro, Max, Team, or Enterprise plan, with **Code execution and file creation** turned on under **Settings > Capabilities** (skills run in Claude's sandbox).
 
-In Claude Code the same skill is `/funraise:funraise`.
+In Claude Code the same skill is `/funraise:funraise`, and the connector can also be added from the terminal:
+
+```bash
+claude mcp add funraise https://connector.mcp.funraise.ai/c/default/mcp
+```
 
 ### Save a workflow as a recipe
 
