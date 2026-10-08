@@ -10,6 +10,7 @@ Ask Claude about Taiwan real estate and get answers from Funraise data. Type `/f
 |---|---|
 | `skills/funraise/SKILL.md` | The `/funraise` skill: how Claude picks data sources, reads tool schemas, and interprets responses |
 | `skills/funraise/references/data-sources.md` | Data source reference that Claude reads when it needs to choose one |
+| `skills/list-recipes/SKILL.md` | The `/list-recipes` skill: lists your personal, team and official recipes in one place, lets you pick one, and runs it with new inputs |
 | `skills/save-recipe/SKILL.md` | The `/save-recipe` skill: saves the workflow from this conversation as a Funraise recipe, to your personal recipes or a team's, as a new recipe or a new version of an existing one |
 | `.mcp.json` | The Funraise connector, `https://connector.mcp.funraise.ai/c/default/mcp` |
 
@@ -26,7 +27,11 @@ In Claude Code the same skill is `/funraise:funraise`.
 
 ### Save a workflow as a recipe
 
-After finishing a piece of work with Funraise data, type `/save-recipe` (in Claude Code, `/funraise:save-recipe`), or just say 「把這次的做法存起來」. Claude asks where to save it — your personal recipes or one of your teams' — and whether to add a new recipe or update an existing one, shows you a summary to confirm, then saves it. Next time, say 「列出我的食譜」 to pick a recipe and run it again with new inputs.
+After finishing a piece of work with Funraise data, type `/save-recipe` (in Claude Code, `/funraise:save-recipe`), or just say 「把這次的做法存起來」. Claude asks where to save it — your personal recipes or one of your teams' — and whether to add a new recipe or update an existing one, shows you a summary to confirm, then saves it.
+
+### Run a saved recipe
+
+Type `/list-recipes` (in Claude Code, `/funraise:list-recipes`), or say 「列出我的食譜」. Claude gathers your personal recipes, your teams' recipes and the official recipes from every Funraise connector you've connected, lists them in one place, and lets you pick one. It then asks for this time's inputs before running the recipe.
 
 Recipes are saved through the connector you choose: a personal connector saves personal recipes, a team connector saves that team's recipes. The recipe feature is currently open on some connections only; if yours doesn't have it yet, the skill says so instead of saving.
 
