@@ -10,6 +10,7 @@ Ask Claude about Taiwan real estate and get answers from Funraise data. Type `/f
 |---|---|
 | `skills/funraise/SKILL.md` | The `/funraise` skill: how Claude picks data sources, reads tool schemas, and interprets responses |
 | `skills/funraise/references/data-sources.md` | Data source reference that Claude reads when it needs to choose one |
+| `skills/save-recipe/SKILL.md` | The `/save-recipe` skill: saves the workflow from this conversation as a Funraise recipe, to your personal recipes or a team's, as a new recipe or a new version of an existing one |
 | `.mcp.json` | The Funraise connector, `https://connector.mcp.funraise.ai/c/default/mcp` |
 
 ## Install and use
@@ -22,6 +23,12 @@ Ask Claude about Taiwan real estate and get answers from Funraise data. Type `/f
 Requirements: a Pro, Max, Team, or Enterprise plan, with **Code execution and file creation** turned on under **Settings > Capabilities** (skills run in Claude's sandbox).
 
 In Claude Code the same skill is `/funraise:funraise`.
+
+### Save a workflow as a recipe
+
+After finishing a piece of work with Funraise data, type `/save-recipe` (in Claude Code, `/funraise:save-recipe`), or just say 「把這次的做法存起來」. Claude asks where to save it — your personal recipes or one of your teams' — and whether to add a new recipe or update an existing one, shows you a summary to confirm, then saves it. Next time, say 「列出我的食譜」 to pick a recipe and run it again with new inputs.
+
+Recipes are saved through the connector you choose: a personal connector saves personal recipes, a team connector saves that team's recipes. The recipe feature is currently open on some connections only; if yours doesn't have it yet, the skill says so instead of saving.
 
 Before the directory listing is live, you can add this repository as a marketplace from **Customize > Plugins > Add > Add marketplace**.
 
