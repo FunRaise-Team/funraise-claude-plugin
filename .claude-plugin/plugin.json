@@ -1,7 +1,7 @@
 {
   "name": "funraise",
   "displayName": "Funraise Taiwan Real Estate",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Answer Taiwan real-estate questions with Funraise data: actual transaction prices, office buildings, cadastral parcels and zoning, urban renewal, industrial parks, and company registry. Type /funraise followed by your question.",
   "author": {
     "name": "Funraise Engineering",
